@@ -1,11 +1,17 @@
 export default function Header() {
   return (
-    <div>
+    <div className="flex flex-col text-center gap-[20px]">
       <h1 className="text-[24px] text-white">pomodoro</h1>
-      <div className="w-[327px] h-[60px] bg-[#161932] items-center justify-center flex gap-[15px]">
-        <h1 className="w-[105px]">pomodoro</h1>
-        <h1>short break</h1>
-        <h1>long break</h1>
+      <div className=" p-[9px] h-[60px] bg-[#161932]   flex gap-[15px]">
+        <h1 className=" p-[10px]  h-[40px] rounded-[30px] bg-red-600">
+          pomodoro
+        </h1>
+        <h1 className=" p-[10px]  h-[40px] rounded-[30px] bg-red-600">
+          pomodoro
+        </h1>
+        <h1 className=" p-[10px]  h-[40px] rounded-[30px] bg-red-600">
+          pomodoro
+        </h1>
       </div>
     </div>
   );

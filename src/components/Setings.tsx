@@ -30,7 +30,7 @@ export default function Setings({ selectedColor, setSelectedColor }) {
   };
 
   return (
-    <div className="flex flex-col items-center mt-[40px]">
+    <div className="flex flex-col items-center mt-[60px]">
       <img
         className="w-[27px] h-[28px] cursor-pointer"
         src={setings}
@@ -44,7 +44,7 @@ export default function Setings({ selectedColor, setSelectedColor }) {
           onClick={toggleShow}
         >
           <div
-            className="bg-white w-[327px] rounded-[20px] h-[80%] p-5"
+            className="bg-white w-[540px] rounded-[20px] h-[364px] p-5"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between">
@@ -55,32 +55,36 @@ export default function Setings({ selectedColor, setSelectedColor }) {
             </div>
             <div className="flex flex-col gap-[10px]">
               <h1>TIME (MINUTES)</h1>
-              <div className="flex justify-between items-center">
+              <div className="flex justify-around items-center">
                 <h1>pomodor</h1>
-                <p>25</p>
-                <div className="flex flex-col gap-[5px]">
-                  <img className="w-[15px] h-[7px]" src={arrowup} alt="" />
-                  <img className="w-[15px] h-[7px]" src={arrowdown} alt="" />
-                </div>
-              </div>
-              <div className="flex justify-between items-center">
                 <h1>short break</h1>
-                <p>5</p>
-                <div className="flex flex-col gap-[5px]">
-                  <img className="w-[15px] h-[7px]" src={arrowup} alt="" />
-                  <img className="w-[15px] h-[7px]" src={arrowdown} alt="" />
-                </div>
-              </div>
-              <div className="flex justify-between items-center">
                 <h1>long break</h1>
-                <p>15</p>
-                <div className="flex flex-col gap-[5px]">
-                  <img className="w-[15px] h-[7px]" src={arrowup} alt="" />
-                  <img className="w-[15px] h-[7px]" src={arrowdown} alt="" />
+              </div>
+              <div className="flex justify-around">
+                <div className="w-[140px] h-[40px] flex items-center  justify-between rounded-[10px] p-[10px] bg-[#EFF1FA]">
+                  <p>25</p>
+                  <div className="flex flex-col gap-[5px]">
+                    <img className="w-[15px] h-[7px]" src={arrowup} alt="" />
+                    <img className="w-[15px] h-[7px]" src={arrowdown} alt="" />
+                  </div>
+                </div>
+                <div className="w-[140px] h-[40px] flex items-center  justify-between rounded-[10px] p-[10px] bg-[#EFF1FA]">
+                  <p>5</p>
+                  <div className="flex flex-col gap-[5px]">
+                    <img className="w-[15px] h-[7px]" src={arrowup} alt="" />
+                    <img className="w-[15px] h-[7px]" src={arrowdown} alt="" />
+                  </div>
+                </div>
+                <div className="w-[140px] h-[40px] flex items-center  justify-between rounded-[10px] p-[10px] bg-[#EFF1FA]">
+                  <p>15</p>
+                  <div className="flex flex-col gap-[5px]">
+                    <img className="w-[15px] h-[7px]" src={arrowup} alt="" />
+                    <img className="w-[15px] h-[7px]" src={arrowdown} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col text-center">
+            <div className="flex flex-col my-[20px] text-center">
               <div className="flex items-center gap-[10px] flex-col justify-between">
                 <p>color</p>
                 <div className="flex gap-[5px]">

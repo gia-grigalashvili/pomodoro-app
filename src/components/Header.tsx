@@ -1,10 +1,14 @@
 import { useState } from "react";
 
-export default function Header({ selectedColor }) {
-  const [activeTimer, setActiveTimer] = useState("pomodoro");
-
+export default function Header({
+  selectedColor,
+  activeTimer,
+  setActiveTimer,
+  onModeChange,
+}) {
   const handleClick = (timer) => {
     setActiveTimer(timer);
+    onModeChange(timer); // Pass the selected timer mode to parent
   };
 
   return (
